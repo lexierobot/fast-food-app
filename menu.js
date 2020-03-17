@@ -12,7 +12,7 @@ function confirmOrder() {
     document.getElementById("orderForm").reset();
 
     //print confirmation message for customer
-    document.getElementById("confirmOrder").innerHTML = "Thanks! We've received your order of: " + document.getElementById("item").value + ", Qty: " + document.getElementById("qty").value;
+    document.getElementById("confirmOrder").innerHTML = "Thanks! We've received your order of... Item: " + document.getElementById("item").value + ", Qty: " + document.getElementById("qty").value;
 };
 
 
