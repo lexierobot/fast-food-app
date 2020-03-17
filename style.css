@@ -1,0 +1,44 @@
+.order {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #efefef;
+    border-radius: 1em;
+}
+
+.order form {
+    margin: 10px;
+    padding: 2em;
+}
+
+#submitOrder {
+    padding: .65em;
+    font-size: 17px;
+    border: none;
+}
+
+button:hover {
+    background-color: orange;
+    color: white;
+}
+
+table {
+    width: 100%;
+}
+table, th, td {
+    border: 1px solid orange;
+    border-collapse: collapse;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 10px;
+}
+
+th {
+    font-weight: bold;
+    background-color: orange;
+    color: white;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fast Food App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu">
+        <table id="menu">
+            <tr>
+                <th>Sandwiches</th>
+                <th>Side Items</th>
+                <th>Drinks</th>
+                <th>Desserts</th>
+            </tr>
+            <tr>
+                <td>Hamburger</td>
+                <td>French Fries</td>
+                <td>Coca-Cola Products</td>
+                <td>Ice Cream Scoop</td>
+            </tr>
+            <tr>
+                <td>Cheeseburger</td>
+                <td>Sweet Potato Fries</td>
+                <td>Sweet Tea</td>
+                <td>Ice Cream Cone</td>
+            </tr>
+            <tr>
+                <td>Fried Chicken</td>
+                <td>Mac 'N Cheese</td>
+                <td>Unsweet Tea</td>
+                <td>Vanilla Milkshake</td>
+            </tr>
+            <tr>
+                <td>Grilled Chicken</td>
+                <td>Tater Tots</td>
+                <td>Fruit Punch</td>
+                <td>Chocolate Milkshake</td>
+            </tr>
+            <tr>
+                <td>Turkey Club</td>
+                <td>Salad</td>
+                <td>Bottled Water</td>
+                <td>Banana Pudding</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="order">
+        <form>
+            <h1>May I take Your Order?</h1>
+            <label for="item">Item:</label>
+            <input type="text" id="item" name="item"><br><br>
+            <label for="qty">Qty:</label>
+            <input type="text" id="qty" name="qty"><br><br>
+            <button class="button" id="submitOrder">Place Order</button>
+        </form>
+        <p id="confirmOrder"></p>
+    </div>
+    
+</body>
+<footer>
+    <script src="menu.js"></script>
+</footer>
+</html>
