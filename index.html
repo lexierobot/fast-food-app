@@ -49,19 +49,20 @@
     </div>
 
     <div class="order">
-        <form>
+        <form id="orderForm">
             <h1>May I take Your Order?</h1>
             <label for="item">Item:</label>
             <input type="text" id="item" name="item"><br><br>
             <label for="qty">Qty:</label>
             <input type="text" id="qty" name="qty"><br><br>
-            <button class="button" id="submitOrder">Place Order</button>
+            <button class="button" id="submitOrder" onclick="confirmOrder(event)">Place Order</button>
         </form>
         <p id="confirmOrder"></p>
     </div>
     
+    <script src="menu.js"></script>
 </body>
 <footer>
-    <script src="menu.js"></script>
+    
 </footer>
 </html>
