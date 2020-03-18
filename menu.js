@@ -1,17 +1,18 @@
-//Define Variable customerOrder
-//Add Event Listener to Order Button
-var customerOrder = document.getElementById("submitOrder").addEventListener("click", confirmOrder);
-
-function confirmOrder() {
+function order() {
     //prevent page auto-reload?
     event.preventDefault();
 
-    //console log the order details
-    console.log("Order received. Item: " + document.getElementById("item").value + ", Qty: " + document.getElementById("qty").value);
+    //var customerOrder
+    var customerOrder = "Item: " + document.getElementById("item").value + ", Qty: " + document.getElementById("qty").value;
+
+    //log customerOrder
+    console.log(customerOrder);
 
     //reset form
     document.getElementById("orderForm").reset();
 
-    //print confirmation message for customer
-    document.getElementById("confirmOrder").innerHTML = "Thanks! We've received your order of Item: " + document.getElementById("item").value + ", Qty: " + document.getElementById("qty").value;
+    //confirmation message
+    document.getElementById("successMessage").innerHTML = "Thanks, we've received your order: <br> " + customerOrder;
 };
+
+
