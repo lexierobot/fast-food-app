@@ -14,12 +14,23 @@ function order(){
     //confirmation message
     document.getElementById("successMessage").innerHTML = "Thanks, we've received your order: <br> " + customerOrder;
 
-    let order = customerOrder.split(',');
-    for (var i = 0; i < order.length; i++) {
-        order[i] = order[i].trim();
+    //split string at commas, then trim
+    let splitOrder = customerOrder.split(',')
+    ;
+    for (var i = 0; i < splitOrder.length; i++) {
+        splitOrder[i] = splitOrder[i].trim();
     }
-    console.log(order);
-};
+    //check
+    console.log(splitOrder);
+
+      //split & trim again
+      for (x in splitOrder) {
+        console.log(splitOrder[x].split(':'));
+        console.log(splitOrder[x].trim());
+        }
+    };
+
+  
 
 //Menu & Stock Qty Object
 let menu = {
@@ -40,6 +51,3 @@ let menu = {
     'cookie': 80,
     'candy': 5,
 };
-
-
-
