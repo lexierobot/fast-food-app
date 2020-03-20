@@ -36,12 +36,19 @@ function order(){
 
     //split string at commas, then colon
     let splitOrder = customerOrder.split(',');
-       for (var i = 0; i <splitOrder.length; i++) {
-           splitOrder[i] = splitOrder[i].replace(/[&\/\\#,+()$~%.'"*?<>{} ]/g, '');
-       }
+    for (let i = 0; i <splitOrder.length; i++) {
+        let splitOrderAgain = splitOrder[i].split(":");
 
-        console.log(splitOrder);
-    };
+        //check
+        console.log(splitOrderAgain);
 
- 
-
+        //trim order
+        for (let j = 0; j < splitOrderAgain.length; j++) {
+            let trimOrder = splitOrderAgain[j].trim();
+            
+            //check
+            console.log(trimOrder);
+            console.log(typeof(trimOrder));
+        }
+    }    
+};
