@@ -42,3 +42,10 @@ th {
     background-color: orange;
     color: white;
 }
+
+#checkInv {
+    border: none;
+    padding: 1em;
+    background-color: orange;
+    color: white;
+}

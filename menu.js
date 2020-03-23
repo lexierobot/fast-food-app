@@ -8,7 +8,7 @@ let menu = {
     'french fries': 20,
     'sweet potato fries': 3,
     'salad': 4,
-    //drinks
+    //drinksd
     'coke': 100,
     'diet coke': 30,
     'bottled water': 20,
@@ -16,7 +16,7 @@ let menu = {
     'milkshake': 9,
     'cookie': 80,
     'candy': 5,
-}
+};
 
 function order(){
     //prevent page auto-reload?
@@ -45,10 +45,14 @@ function order(){
         //trim order
         for (let j = 0; j < splitOrderAgain.length; j++) {
             let trimOrder = splitOrderAgain[j].trim();
-            
-            //check
-            console.log(trimOrder);
-            console.log(typeof(trimOrder));
+
+            //remove special characters
+            let newOrder = trimOrder.replace(/[^a-zA-Z0-9: ]/g, '');
+
+            //check input
+            console.log(newOrder);
+
+                    // console.log(`${property}: ${menu[property]}`);
         }
-    }    
+    }
 };
