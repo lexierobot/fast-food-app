@@ -1,17 +1,17 @@
 //Menu Object
 let menu = {
-    hamburger: 25,
-    cheeseburger: 14,
-    chicken: 33,
-    fries: 20,
-    tots: 3,
-    salad: 4,
-    coke: 100,
-    tea: 30,
-    water: 20,
-    milkshake: 9,
-    cookie: 80,
-    candy: 5
+    'hamburger': 25,
+    'cheeseburger': 14,
+    'chicken': 33,
+    'fries': 20,
+    'tots': 3,
+    'salad': 4,
+    'coke': 100,
+    'tea': 30,
+    'water': 20,
+    'milkshake': 9,
+    'cookie': 80,
+    'candy': 5
 };
 
 function order(){
@@ -38,11 +38,20 @@ function order(){
             //remove special characters just for regex
             let newOrder = trimOrder.replace(/[^a-zA-Z0-9: ]/g, '');
 
-        //check order input against menu items
-        for(let x in menu) {
-            if(x != newOrder){
-                console.log(newOrder + " is not on the menu.")
-            }
+            //NOT WORKING CORRECTLY
+        // //check order input against menu items
+        // for(let x in menu) {
+        //     if(x === newOrder){
+        //         console.log(newOrder + " exists");
+        //     } else if(x !== newOrder){
+        //         console.log(newOrder + " does not exist.");
+        //     }
+        // }
+        // //check stock qty
+        // for(let x in menu) {
+        //     if(menu[x] <= newOrder){
+        //         return menu[x] - newOrder;
+        //     }console.log(newOrder);
         }
     }
-}};
+};
