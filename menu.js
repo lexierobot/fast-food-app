@@ -52,6 +52,15 @@ function order(){
             //check input
             console.log(newOrder);
 
+            for(let k in menu) {
+                function checkItem(item) {
+                if(menu[k].properties === newOrder){
+                    console.log (newOrder + "exists")
+                } else {
+                    console.log (newOrder + " does not exist");
+                }
+            }} checkItem();
+
                     // console.log(`${property}: ${menu[property]}`);
         }
     }
